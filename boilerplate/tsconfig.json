@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "baseUrl": "src",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
+    "module": "commonjs",
+    "target": "es2017",
+    "rootDir": "src",
+    "lib": ["esnext", "esnext.asynciterable"]
+  },
+  "include": ["src/**/*.ts"]
+}

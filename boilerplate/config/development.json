@@ -1,0 +1,56 @@
+{
+  "settings": {
+    "debug": true,
+    "loggerFormat": "dev"
+  },
+  "log": {
+    "level": "debug",
+    "console": true,
+    "file": "app.log"
+  },
+  "cache": {
+    "type": "simple"
+  },
+  "store": {
+    "options": {
+      "logQueries": true
+    },
+    "meta": {
+      "uri": "mongodb://localhost",
+      "dbname": "{{ projectName }}_dev_meta",
+      "options": {
+        "useUnifiedTopology": true
+      }
+    },
+    "shards": {
+      "s1": {
+        "uri": "mongodb://localhost",
+        "dbname": "{{ projectName }}_dev_s1",
+        "options": {
+          "useUnifiedTopology": true
+        }
+      },
+      "s2": {
+        "uri": "mongodb://localhost",
+        "dbname": "{{ projectName }}_dev_s2",
+        "options": {
+          "useUnifiedTopology": true
+        }
+      },
+      "s3": {
+        "uri": "mongodb://localhost",
+        "dbname": "{{ projectName }}_dev_s3",
+        "options": {
+          "useUnifiedTopology": true
+        }
+      },
+      "s4": {
+        "uri": "mongodb://localhost",
+        "dbname": "{{ projectName }}_dev_s4",
+        "options": {
+          "useUnifiedTopology": true
+        }
+      }
+    }
+  }
+}

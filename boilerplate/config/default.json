@@ -1,0 +1,15 @@
+{
+  "port": 5000,
+  "settings": {
+    "csrf": false,
+    "debug": false,
+    "loggerFormat": "tiny",
+    "session": {
+      "cookie": {
+        "sameSite": "lax"
+      }
+    }
+  },
+  "session_cookie_name": "_{{ projectName }}_session_id",
+  "session_expiration_days": 14
+}
